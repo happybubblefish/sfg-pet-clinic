@@ -2,9 +2,11 @@ package finra.springframework.sfgpetclinic.sevices.map;
 
 import finra.springframework.sfgpetclinic.model.Pet;
 import finra.springframework.sfgpetclinic.sevices.CrudService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
 
     @Override

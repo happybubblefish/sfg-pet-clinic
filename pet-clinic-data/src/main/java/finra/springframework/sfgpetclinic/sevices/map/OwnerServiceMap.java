@@ -3,9 +3,11 @@ package finra.springframework.sfgpetclinic.sevices.map;
 import finra.springframework.sfgpetclinic.model.Owner;
 import finra.springframework.sfgpetclinic.sevices.CrudService;
 import finra.springframework.sfgpetclinic.sevices.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
